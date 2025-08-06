@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>GA4 テストページ</title>
+  <title>ユーザ登録</title>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7QN168DSE4"></script>
   <script>
@@ -29,12 +29,22 @@
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRQTWD5D" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRQTWD5D"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <h1>GA4 テストページへようこそ</h1>
+  <h1>ユーザ登録画面</h1>
 
-  <button onclick="location.href='user_add.html'">ユーザ情報の登録</button>
-  <button onclick="location.href='02-1_mail_add.html'">メールアドレスからの登録</button>
+  <label for="mailaddress">メールアドレス：</label>
+  <input type="text" value="" placeholder="takayuki.kameyama.pb@east.ntt.co.jp" >
+  <label for="username">ユーザ名：</label>
+  <input type="text" value="" placeholder="かめやま　たかゆき" >
+  <label for="username">会社名：</label>
+  <input type="text" id="officename" name="officename">
+  <label for="username">その他：</label>
+  <input type="text" id="etcetc" name="etcetc">
+
+  <br><br>
+  <button onclick="location.href='02-4_riyoukiyaku.html'">登録</button>
   <button onclick="window.close()">ページを閉じる</button>
 </body>
 </html>
